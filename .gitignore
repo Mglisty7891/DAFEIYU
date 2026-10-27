@@ -1,0 +1,21 @@
+# 运行时数据（不入库）
+data/
+!data/.gitkeep
+*.db
+*.db-shm
+*.db-wal
+mood.json
+needs.json
+mood-cursor.json
+mood.txt
+
+# 依赖与缓存
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# 打包产物
+dist/
+*.tar.gz
