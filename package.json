@@ -1,0 +1,26 @@
+{
+  "name": "dafeiyu",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "三层记忆 + 轻量情绪层，给 LLM Agent 的纯本地模块（CLI / HTTP / MCP）",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "llm-agent",
+    "memory",
+    "affect",
+    "mood",
+    "mcp",
+    "sqlite",
+    "deepseek-harness"
+  ],
+  "scripts": {
+    "test": "python3 tests/test_memory.py && python3 tests/test_mood.py && python3 tests/test_needs.py",
+    "demo": "python3 cli.py demo",
+    "server": "python3 server.py --port 8730",
+    "mood": "python3 moodd.py"
+  }
+}
